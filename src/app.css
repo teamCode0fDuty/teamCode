@@ -8,6 +8,7 @@ body {
 /* Navigation Css */
 nav {
     position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-around;
     gap: 670px;
@@ -16,6 +17,7 @@ nav {
     text-transform: capitalize;
     height: 92px;
     width: 100%;
+    z-index: 100;
 }
 nav ul {
     display: flex;
@@ -49,11 +51,14 @@ nav ul {
     justify-content: space-around;
     align-items: end;
 }
-.menu-card, img {
+.menu-card, img, a {
     position: relative;
     width: 286px;
     height: 194px;
-    background-color: rgb(10, 12, 12);
+    /* background-color: rgb(10, 12, 12); */
+}
+.menu-card:hover {
+    border: solid white 2px;
 }
 .text {
     position: relative;
@@ -88,3 +93,46 @@ nav ul {
     padding: 0;
 }
 /***********************************************/
+
+/*Brews & Buns*/
+.text2 {
+    /* background-color: brown; */
+    height: 348px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text2 h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.text2 p {
+    font-size: 24px;
+}
+
+/*Footer*/
+.footer {
+    background-color: #964B00;
+    height: 92px;
+    width: 100%;
+    bottom: 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 800px;
+}
+.social-media img, a {
+    width: 34px;
+    height: 36px
+}
+.social-media {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(66, 1, 151); */
+    width: 150px;
+    height: 36px;
+}
