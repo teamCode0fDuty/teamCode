@@ -5,6 +5,7 @@
 
 <main>
 	<nav>
+		<img src="/assets/logo.png" alt="logo" class="logo">
 		<ul>
 			<li><a href="/">home</a></li>
 			<li><a href="/shop">shop</a></li>
